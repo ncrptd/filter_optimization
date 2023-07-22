@@ -2,11 +2,11 @@ Modulo Filtered Data Table
 This is a React web application that demonstrates a data table with filters based on modulo values. The application allows you to filter the data based on modulo values for each column and interactively updates other filters based on your selections.
 
 Installation and Usage
-Clone the repository: git clone 
+Clone the repository: git clone https://github.com/ncrptd/filter_optimization
 Navigate to the project directory: cd modulo-filtered-data-table
 Install dependencies: npm install
 Run the development server: npm start
-Open your browser and go to http://localhost:3000 to access the application.
+Open your browser and go to http://localhost:5173 to access the application.
 Components and Structure
 The application consists of the following components:
 
