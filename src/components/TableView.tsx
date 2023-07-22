@@ -3,7 +3,6 @@ import { useFilterContext } from '../contexts/FilterContext';
 function TableView() {
   const { state } = useFilterContext();
   const { filteredData, columns } = state;
-  console.log(state);
   return <DataTable pagination columns={columns} data={filteredData} />;
 }
 
