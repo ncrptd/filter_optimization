@@ -13,7 +13,7 @@ import {
   initialState,
 } from '../reducers/filterReducer';
 import Papa from 'papaparse';
-
+// import csvFile from '../../public/data/dataset_small.csv';
 type FilterContextProps = {
   children: ReactNode;
 };
@@ -32,7 +32,7 @@ export const FilterProvider = ({ children }: FilterContextProps) => {
   const [state, dispatch] = useReducer(filterReducer, initialState);
 
   const getData = async () => {
-    const res = await fetch('../data/dataset_small.csv');
+    const res = await fetch('public/data/dataset_small.csv');
     const rawData = await res.text();
     const parsedData = Papa.parse(rawData).data as Array<Array<string>>;
 
