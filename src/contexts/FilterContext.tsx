@@ -32,7 +32,7 @@ export const FilterProvider = ({ children }: FilterContextProps) => {
   const [state, dispatch] = useReducer(filterReducer, initialState);
 
   const getData = async () => {
-    const res = await fetch('src/data/dataset_test.csv');
+    const res = await fetch('../data/dataset_small.csv');
     const rawData = await res.text();
     const parsedData = Papa.parse(rawData).data as Array<Array<string>>;
 
